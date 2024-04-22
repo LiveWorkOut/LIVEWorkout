@@ -1,15 +1,16 @@
 //
-//  LoginRegisterView.swift
+//  RegisterView.swift
 //  LIVE Workout
 //
-//  Created by Abraham Estrada on 4/20/24.
+//  Created by Abraham Estrada on 4/21/24.
 //
 
 import SwiftUI
 
-struct LoginRegisterView: View {
+struct RegisterView: View {
     
     @State private var email: String = ""
+    @State private var username: String = ""
     @State private var password: String = ""
     @State private var showProfileScreenActive = false;
     
@@ -20,8 +21,11 @@ struct LoginRegisterView: View {
                     .font(.largeTitle)
                 
                 VStack {
+                    Text("Email")
+                    TextField("Type email here...", text: $email)
+                        .padding()
                     Text("Username")
-                    TextField("Type username here...", text: $email)
+                    TextField("Type username here...", text: $username)
                         .padding()
                     Text("Password")
                     SecureField("Type password here...", text: $password)
@@ -29,24 +33,14 @@ struct LoginRegisterView: View {
                 }
                 .padding()
                 
-                HStack {
-                    Button("Sign Up") {
-                        // TODO: Sign up user
-                        
-                    }
-                    .padding()
-                    .background(Color.gray)
-                    .foregroundColor(.white)
-                    .clipShape(Capsule())
-                    Button("Login") {
-                        // TODO: Login user
-                        showProfileScreenActive = true
-                    }
-                    .padding()
-                    .background(Color.pink)
-                    .foregroundColor(.white)
-                    .clipShape(Capsule())
+                Button("Sign Up") {
+                    // TODO: Sign up user
+                    
                 }
+                .padding()
+                .background(Color.gray)
+                .foregroundColor(.white)
+                .clipShape(Capsule())
                 .navigationDestination(isPresented: $showProfileScreenActive, destination: {
                     ContentView()
                 })
@@ -56,5 +50,6 @@ struct LoginRegisterView: View {
 }
 
 #Preview {
-    LoginRegisterView()
+    RegisterView()
 }
+

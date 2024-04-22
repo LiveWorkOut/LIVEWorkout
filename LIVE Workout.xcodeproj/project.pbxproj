@@ -15,6 +15,10 @@
 		333C26F82BD5F9B500D786A4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C26F72BD5F9B500D786A4 /* ProfileView.swift */; };
 		333C26FA2BD5F9ED00D786A4 /* SchedulePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C26F92BD5F9ED00D786A4 /* SchedulePostView.swift */; };
 		333C26FC2BD5FFA600D786A4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C26FB2BD5FFA600D786A4 /* LoginView.swift */; };
+		333C26FF2BD6070C00D786A4 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 333C26FE2BD6070C00D786A4 /* ParseSwift */; };
+		333C27032BD6093500D786A4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C27022BD6093500D786A4 /* User.swift */; };
+		333C27052BD6096700D786A4 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C27042BD6096700D786A4 /* RegisterView.swift */; };
+		333C27082BD60A3800D786A4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C27072BD60A3800D786A4 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,9 @@
 		333C26F72BD5F9B500D786A4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		333C26F92BD5F9ED00D786A4 /* SchedulePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePostView.swift; sourceTree = "<group>"; };
 		333C26FB2BD5FFA600D786A4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		333C27022BD6093500D786A4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		333C27042BD6096700D786A4 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		333C27072BD60A3800D786A4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				333C26FF2BD6070C00D786A4 /* ParseSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,14 +67,12 @@
 		333C26E62BD5F96F00D786A4 /* LIVE Workout */ = {
 			isa = PBXGroup;
 			children = (
-				333C26F52BD5F99500D786A4 /* InstructorView.swift */,
 				333C26E72BD5F96F00D786A4 /* LIVE_WorkoutApp.swift */,
-				333C26E92BD5F96F00D786A4 /* ContentView.swift */,
+				333C27012BD6090300D786A4 /* Model */,
+				333C27062BD60A2700D786A4 /* ViewModel */,
+				333C27002BD608E400D786A4 /* View */,
 				333C26EB2BD5F97000D786A4 /* Assets.xcassets */,
 				333C26ED2BD5F97000D786A4 /* Preview Content */,
-				333C26F72BD5F9B500D786A4 /* ProfileView.swift */,
-				333C26F92BD5F9ED00D786A4 /* SchedulePostView.swift */,
-				333C26FB2BD5FFA600D786A4 /* LoginView.swift */,
 			);
 			path = "LIVE Workout";
 			sourceTree = "<group>";
@@ -77,6 +83,35 @@
 				333C26EE2BD5F97000D786A4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		333C27002BD608E400D786A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				333C26FB2BD5FFA600D786A4 /* LoginView.swift */,
+				333C27042BD6096700D786A4 /* RegisterView.swift */,
+				333C26E92BD5F96F00D786A4 /* ContentView.swift */,
+				333C26F52BD5F99500D786A4 /* InstructorView.swift */,
+				333C26F72BD5F9B500D786A4 /* ProfileView.swift */,
+				333C26F92BD5F9ED00D786A4 /* SchedulePostView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		333C27012BD6090300D786A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				333C27022BD6093500D786A4 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		333C27062BD60A2700D786A4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				333C27072BD60A3800D786A4 /* AuthService.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +130,9 @@
 			dependencies = (
 			);
 			name = "LIVE Workout";
+			packageProductDependencies = (
+				333C26FE2BD6070C00D786A4 /* ParseSwift */,
+			);
 			productName = "LIVE Workout";
 			productReference = 333C26E42BD5F96F00D786A4 /* LIVE Workout.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +161,9 @@
 				Base,
 			);
 			mainGroup = 333C26DB2BD5F96F00D786A4;
+			packageReferences = (
+				333C26FD2BD6070C00D786A4 /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+			);
 			productRefGroup = 333C26E52BD5F96F00D786A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -152,9 +193,12 @@
 				333C26FC2BD5FFA600D786A4 /* LoginView.swift in Sources */,
 				333C26F82BD5F9B500D786A4 /* ProfileView.swift in Sources */,
 				333C26F62BD5F99500D786A4 /* InstructorView.swift in Sources */,
+				333C27082BD60A3800D786A4 /* AuthService.swift in Sources */,
 				333C26FA2BD5F9ED00D786A4 /* SchedulePostView.swift in Sources */,
 				333C26EA2BD5F96F00D786A4 /* ContentView.swift in Sources */,
+				333C27052BD6096700D786A4 /* RegisterView.swift in Sources */,
 				333C26E82BD5F96F00D786A4 /* LIVE_WorkoutApp.swift in Sources */,
+				333C27032BD6093500D786A4 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +404,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		333C26FD2BD6070C00D786A4 /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.14.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		333C26FE2BD6070C00D786A4 /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 333C26FD2BD6070C00D786A4 /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 333C26DC2BD5F96F00D786A4 /* Project object */;
 }
