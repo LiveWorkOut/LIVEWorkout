@@ -12,13 +12,10 @@ struct WorkoutEditView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Environment(\.managedObjectContext) private var viewContext
-    @EnvironmentObject var dateHolder: DateHolder
     
-    @State var selectedTaskItem: Item?
     @State var name: String
     @State var desc: String
     @State var timestamp: Date
-    @State var isCompleted: Bool
     
     @State var isPublic: Bool
     @State var saveAsVideo: Bool
@@ -37,25 +34,31 @@ struct WorkoutEditView: View {
     @State var sunday: Bool
 
     
-    init(passedTaskItem: Item?, initialDate: Date){
-        if let taskItem = passedTaskItem {
-            _name = State(initialValue: taskItem.name ?? "")
-            _desc = State(initialValue: taskItem.desc ?? "")
-            _timestamp = State(initialValue: taskItem.timestamp ?? initialDate)
-            _isCompleted = State(initialValue: false)
+    // init(passedTaskItem: Item?, initialDate: Date){
+        init(){
+        // if let taskItem = passedTaskItem {
+        //     _name = State(initialValue: taskItem.name ?? "")
+        //     _desc = State(initialValue: taskItem.desc ?? "")
+        //     _timestamp = State(initialValue: taskItem.timestamp ?? initialDate)
+        //     _isCompleted = State(initialValue: false)
             
-        } else {
-            _name = State(initialValue: "")
-            _desc = State(initialValue: "")
-            _timestamp = State(initialValue: passedTaskItem?.timeCompleted ?? initialDate)
-            _isCompleted = State(initialValue: false)
-        }
+        // } else {
+        //     _name = State(initialValue: "")
+        //     _desc = State(initialValue: "")
+        //     _timestamp = State(initialValue: passedTaskItem?.timeCompleted ?? initialDate)
+        //     _isCompleted = State(initialValue: false)
+        // }
+
+        _name = State(initialValue: "");
+        _desc = State(initialValue: "");
+        _timestamp = State(initialValue: Date())
+        
 
         _isPublic = State(initialValue: false)
         _saveAsVideo = State(initialValue: false)
         _setAsRecurrent = State(initialValue: false)
-        _startDate = State(initialValue: initialDate)
-        _endDate = State(initialValue: initialDate)
+        _startDate = State(initialValue: Date() )
+        _endDate = State(initialValue: Date() )
         _monday = State(initialValue: false)
         _tuesday = State(initialValue: false)
         _wednesday = State(initialValue: false)
@@ -185,21 +188,17 @@ struct WorkoutEditView: View {
         }
     }
     
-    func displayCOmps() -> DatePickerComponents
-    {
-        return isCompleted ? [.hourAndMinute, .date] : [.date]
-    }
     
     func saveAction(){
-        if selectedTaskItem == nil {
-            selectedTaskItem = Item(context: viewContext)
-        }
+        // if selectedTaskItem == nil {
+        //     selectedTaskItem = Item(context: viewContext)
+        // }
         
-        selectedTaskItem?.timestamp = Date()
-        selectedTaskItem?.name = name
-        selectedTaskItem?.isCompleted = false
+        // selectedTaskItem?.timestamp = Date()
+        // selectedTaskItem?.name = name
+        // selectedTaskItem?.isCompleted = false
         
-        dateHolder.saveContext(viewContext)
-        self.presentationMode.wrappedValue.dismiss()
+        // dateHolder.saveContext(viewContext)
+        // self.presentationMode.wrappedValue.dismiss()
     }
 }
