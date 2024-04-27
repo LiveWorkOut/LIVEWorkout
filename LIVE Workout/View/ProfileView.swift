@@ -26,15 +26,17 @@ struct ProfileView: View {
             Text("Schedule:")
                 .padding()
             // TODO: - Do a for each here for each of their workouts with a workout view
-            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]) {
-                SchedulePostView(header: "Cycling", bodyText: "60 minutes", caption: "Created by Arnold.")
-                SchedulePostView(header: "Dumbell", bodyText: "15 minutes", caption: "Created by Arnold.")
-                SchedulePostView(header: "Leg", bodyText: "30 minutes", caption: "Created by Arnold.")
-                SchedulePostView(header: "Back ", bodyText: "15 minutes", caption: "Created by Arnold.")
-                SchedulePostView(header: "Abs ", bodyText: "15 minutes", caption: "Created by Arnold.")
-                SchedulePostView(header: "Chest ", bodyText: "15 minutes", caption: "Created by Arnold.")
+            ScrollView {
+                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]) {
+                    SchedulePostView(header: "Cycling", bodyText: "60 minutes", caption: "Created by Arnold.")
+                    SchedulePostView(header: "Dumbell", bodyText: "15 minutes", caption: "Created by Arnold.")
+                    SchedulePostView(header: "Leg", bodyText: "30 minutes", caption: "Created by Arnold.")
+                    SchedulePostView(header: "Back ", bodyText: "15 minutes", caption: "Created by Arnold.")
+                    SchedulePostView(header: "Abs ", bodyText: "15 minutes", caption: "Created by Arnold.")
+                    SchedulePostView(header: "Chest ", bodyText: "15 minutes", caption: "Created by Arnold.")
+                }
+                .padding(8)
             }
-            .padding(8)
             Spacer()
         }
     }
