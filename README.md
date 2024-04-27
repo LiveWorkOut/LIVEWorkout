@@ -1,15 +1,15 @@
-# Group #4 Sprint Planning 
+# Group #4 Unit 9 Submission
 
 > We are aware that `codepathreview` might not have access to our planning board, so we have some screenshots here
 
 ## Project Board and Issues
 
-![](./img/2024-04-20-00-55-33.png)
+![](./img/2024-04-27-00-03-47.png)
 https://github.com/orgs/LiveWorkOut/projects/1/views/2
 
 ![](./img/2024-04-20-00-57-29.png)
 
-https://github.com/orgs/LiveWorkOut/projects/1/views/1
+![](./img/2024-04-27-00-04-03.png)
 
 ## Milestones
 ![milestones](https://github.com/LiveWorkOut/live-workout-space/assets/63534623/6f3fe56a-2416-4d50-a62e-3cbf38300147)
@@ -20,11 +20,15 @@ https://github.com/orgs/LiveWorkOut/projects/1/views/1
 ### Workout Schedule Creation Story
 
 
-| Story                                  | gif                                  | Storyboard |
-| -------------------------------------- | ------------------------------------ | ---------- |
-| Login  + Profile Story                 | ![](./gif/login-profile.gif)         | ![](./img/2024-04-22-02-53-08.png)
-| Schedule Workout Creation Screen Story | ![](./gif/scheduleworkoutscreen.gif) | ![](./img/2024-04-22-02-53-23.png)
-| Wokrout Schedule Screen Story          | ![](./img/2024-04-22-02-50-17.png)   | ![](./img/2024-04-22-02-54-19.png)
+| Story                                  | gif                                  | Storyboard                         |
+| -------------------------------------- | ------------------------------------ | ---------------------------------- |
+| Login  + Profile Story                 | ![](./gif/login-profile.gif)         | ![](./img/2024-04-22-02-53-08.png) |
+| Schedule Workout Creation Screen Story | ![](./gif/scheduleworkoutscreen.gif) | ![](./img/2024-04-22-02-53-23.png) |
+| Wokrout Schedule Screen Story          | ![](./img/2024-04-22-02-50-17.png)   | ![](./img/2024-04-22-02-54-19.png) |
+| Instructors Profile                    | ![](./img/2024-04-27-00-09-53.png)   | ![](./img/2024-04-27-00-04-59.png) |
+| Research and test Streaming API        | ![](./img/2024-04-27-00-08-16.png)   | ![](./img/2024-04-27-00-08-59.png) |
+| Integration                            | ![](./gif/integration.gif)           | ![](./img/2024-04-22-02-54-33.png) | 
+
 
 
 ## Completed user stories checked-off in README
