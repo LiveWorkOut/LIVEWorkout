@@ -202,3 +202,9 @@ struct WorkoutEditView: View {
         // self.presentationMode.wrappedValue.dismiss()
     }
 }
+
+
+#Preview {
+    WorkoutEditView()
+}
+
