@@ -21,8 +21,8 @@ struct WorkoutEditView: View {
     @State var saveAsVideo: Bool
     @State var setAsRecurrent: Bool
     // Start and end date.
-    @State var startDate: Date
-    @State var endDate: Date
+    @State var startTime: Date
+    @State var endTime: Date
 
     // Monday to friday
     @State var monday: Bool
@@ -57,8 +57,9 @@ struct WorkoutEditView: View {
         _isPublic = State(initialValue: false)
         _saveAsVideo = State(initialValue: false)
         _setAsRecurrent = State(initialValue: false)
-        _startDate = State(initialValue: Date() )
-        _endDate = State(initialValue: Date() )
+        
+        _startTime = State(initialValue: Date() )
+        _endTime = State(initialValue: Date() )
         _monday = State(initialValue: false)
         _tuesday = State(initialValue: false)
         _wednesday = State(initialValue: false)
@@ -133,8 +134,8 @@ struct WorkoutEditView: View {
             }
             
             Section(header: Text("Start and End Date")) {
-                DatePicker("Start Date", selection: $startDate, displayedComponents: .date)
-                DatePicker("End Date", selection: $endDate, displayedComponents: .date)
+                DatePicker("Start Time", selection: $startTime, displayedComponents: .hourAndMinute)
+                DatePicker("End Time", selection: $endTime, displayedComponents: .hourAndMinute)
                 
                 VStack(alignment: .leading) {
                     Text("Select Days:")
@@ -202,3 +203,9 @@ struct WorkoutEditView: View {
         // self.presentationMode.wrappedValue.dismiss()
     }
 }
+
+
+#Preview {
+    WorkoutEditView()
+}
+
