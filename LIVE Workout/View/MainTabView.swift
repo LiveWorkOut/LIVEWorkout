@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainTabView.swift
 //  LIVE Workout
 //
 //  Created by Abraham Estrada on 4/21/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainTabView: View {
     var body: some View {
         TabView {
             // First Tab
@@ -17,7 +17,7 @@ struct ContentView: View {
                 }
             
             // Second Tab
-            Text("Bookmarks View")
+            InstructorsView()
                 .tabItem {
                     Label("Bookmarks", systemImage: "bookmark")
                 }
@@ -32,5 +32,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    MainTabView()
 }
