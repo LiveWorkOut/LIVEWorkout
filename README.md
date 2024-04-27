@@ -7,12 +7,11 @@
 ![](./img/2024-04-27-00-03-47.png)
 https://github.com/orgs/LiveWorkOut/projects/1/views/2
 
-![](./img/2024-04-20-00-57-29.png)
-
 ![](./img/2024-04-27-00-04-03.png)
 
 ## Milestones
-![milestones](https://github.com/LiveWorkOut/live-workout-space/assets/63534623/6f3fe56a-2416-4d50-a62e-3cbf38300147)
+
+![](./img/2024-04-27-00-14-27.png)
 
 # Completed User Stories
 
