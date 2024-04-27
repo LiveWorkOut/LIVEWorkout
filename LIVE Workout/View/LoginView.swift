@@ -48,7 +48,7 @@ struct LoginView: View {
                     .clipShape(Capsule())
                 }
                 .navigationDestination(isPresented: $showProfileScreenActive, destination: {
-                    ContentView()
+                    MainTabView()
                 })
             }
         }
