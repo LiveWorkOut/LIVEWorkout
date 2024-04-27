@@ -42,7 +42,7 @@ struct RegisterView: View {
                 .foregroundColor(.white)
                 .clipShape(Capsule())
                 .navigationDestination(isPresented: $showProfileScreenActive, destination: {
-                    ContentView()
+                    MainTabView()
                 })
             }
         }

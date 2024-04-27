@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		333C26E82BD5F96F00D786A4 /* LIVE_WorkoutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C26E72BD5F96F00D786A4 /* LIVE_WorkoutApp.swift */; };
-		333C26EA2BD5F96F00D786A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C26E92BD5F96F00D786A4 /* ContentView.swift */; };
 		333C26EC2BD5F97000D786A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333C26EB2BD5F97000D786A4 /* Assets.xcassets */; };
 		333C26EF2BD5F97000D786A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333C26EE2BD5F97000D786A4 /* Preview Assets.xcassets */; };
 		333C26F62BD5F99500D786A4 /* InstructorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C26F52BD5F99500D786A4 /* InstructorView.swift */; };
@@ -20,12 +19,13 @@
 		333C27052BD6096700D786A4 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C27042BD6096700D786A4 /* RegisterView.swift */; };
 		333C27082BD60A3800D786A4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C27072BD60A3800D786A4 /* AuthService.swift */; };
 		33A4E5312BDCA225001F4423 /* WorkoutEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4E5302BDCA225001F4423 /* WorkoutEditView.swift */; };
+		33A4E5372BDCA7D2001F4423 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4E5362BDCA7D2001F4423 /* MainTabView.swift */; };
+		33A4E5392BDCA816001F4423 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4E5382BDCA816001F4423 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		333C26E42BD5F96F00D786A4 /* LIVE Workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LIVE Workout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		333C26E72BD5F96F00D786A4 /* LIVE_WorkoutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LIVE_WorkoutApp.swift; sourceTree = "<group>"; };
-		333C26E92BD5F96F00D786A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		333C26EB2BD5F97000D786A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		333C26EE2BD5F97000D786A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		333C26F52BD5F99500D786A4 /* InstructorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorView.swift; sourceTree = "<group>"; };
@@ -36,6 +36,8 @@
 		333C27042BD6096700D786A4 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		333C27072BD60A3800D786A4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		33A4E5302BDCA225001F4423 /* WorkoutEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutEditView.swift; sourceTree = "<group>"; };
+		33A4E5362BDCA7D2001F4423 /* MainTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		33A4E5382BDCA816001F4423 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +94,8 @@
 			children = (
 				333C26FB2BD5FFA600D786A4 /* LoginView.swift */,
 				333C27042BD6096700D786A4 /* RegisterView.swift */,
-				333C26E92BD5F96F00D786A4 /* ContentView.swift */,
+				33A4E5362BDCA7D2001F4423 /* MainTabView.swift */,
+				33A4E5382BDCA816001F4423 /* HomeView.swift */,
 				33A4E5302BDCA225001F4423 /* WorkoutEditView.swift */,
 				333C26F52BD5F99500D786A4 /* InstructorView.swift */,
 				333C26F72BD5F9B500D786A4 /* ProfileView.swift */,
@@ -198,11 +201,12 @@
 				333C26F62BD5F99500D786A4 /* InstructorView.swift in Sources */,
 				333C27082BD60A3800D786A4 /* AuthService.swift in Sources */,
 				333C26FA2BD5F9ED00D786A4 /* SchedulePostView.swift in Sources */,
-				333C26EA2BD5F96F00D786A4 /* ContentView.swift in Sources */,
+				33A4E5392BDCA816001F4423 /* HomeView.swift in Sources */,
 				333C27052BD6096700D786A4 /* RegisterView.swift in Sources */,
 				33A4E5312BDCA225001F4423 /* WorkoutEditView.swift in Sources */,
 				333C26E82BD5F96F00D786A4 /* LIVE_WorkoutApp.swift in Sources */,
 				333C27032BD6093500D786A4 /* User.swift in Sources */,
+				33A4E5372BDCA7D2001F4423 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

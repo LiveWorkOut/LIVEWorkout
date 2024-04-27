@@ -47,9 +47,9 @@ struct LoginView: View {
                     .foregroundColor(.white)
                     .clipShape(Capsule())
                 }
-                .navigationDestination(isPresented: $showProfileScreenActive, destination: {
-                    ContentView()
-                })
+                .fullScreenCover(isPresented: $showProfileScreenActive) {
+                    MainTabView()
+                }
             }
         }
     }
