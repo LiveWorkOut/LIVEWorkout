@@ -77,7 +77,6 @@ struct InstructorWindow: View {
                             .font(.subheadline)
                     }
                 }
-                
                 HStack {
                     Text("Created:")
                         .foregroundColor(.gray)
